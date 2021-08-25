@@ -70,17 +70,6 @@ def honorarios_min(salariom, vcondenacao):
                             min5 = 0.01*novo_vcondenacao
                             return "O valor mínimo a ser pago será:", min + \
                                 min2 + min3 + min4 + min5
-    except TypeError:
-        return """Somente números são aceitos e não esqueça de
-              usar . no lugar de ,"""
-    except SyntaxError:
-        return """Somente números são aceitos e
-              não esqueça de usar . no lugar de ,"""
-    except ZeroDivisionError:
-        return "Não divida por 0"
-    except NameError:
-        return """Somente números são aceitos e não esqueça de
-              usar . no lugar de ,"""
     except Exception:
         return """Somente números são aceitos e não esqueça de
               usar . no lugar de ,"""
@@ -159,17 +148,7 @@ def honorarios_max(salariom, vcondenacao):
                             return "O valor máximo a ser pago será:", max + \
                                 max2 + max3 + max4 + max5
 
-    except TypeError:
-        return """Somente números são aceitos e não esqueça de
-              usar . no lugar de ,"""
-    except SyntaxError:
-        return """Somente números são aceitos e
-              não esqueça de usar . no lugar de ,"""
-    except ZeroDivisionError:
-        return "Não divida por 0"
-    except NameError:
-        return """Somente números são aceitos e não esqueça de
-              usar . no lugar de ,"""
     except Exception:
         return """Somente números são aceitos e não esqueça de
               usar . no lugar de ,"""
+
