@@ -1,7 +1,7 @@
 # Honorarios-Sucumbenciais
 Projeto que visou a criação de uma ferramenta capaz de realizar os cálculos de honorários sucumbenciais de acordo com o artigo 85 do CPC.
 - Biblioteca utilizada: PySimpleGUIQT, PyInstaller
--  PyInstaller serviu para criar um arquivo ".exe" da file apphonorarios.py para que pudesse ser utilizado de forma prática, mesmo para aqueles que não tenham python em suas máquinas
+-  PyInstaller serviu para criar um arquivo ".exe" da file apphonorarios.py para que pudesse ser utilizado de forma prática, mesmo por aqueles que não tenham python em suas máquinas
 
 - Esse foi o resultado da ferramenta criada com o auxílio da biblioteca PySimpleGUIQT:
 
