@@ -21,8 +21,10 @@ while True:
         window['_OUT_'].update('')
     if event in (sg.Ok, 'Ok'):
         try:
-            print(fh.honorarios_min(float(value[0]), float(value[1])))
-            print(fh.honorarios_max(float(value[0]), float(value[1])))
+            a = (fh.honorarios_min(float(value[0]), float(value[1])))
+            b = (fh.honorarios_max(float(value[0]), float(value[1])))
+            print(a[0] + " " + str(a[1]))
+            print(b[0] + " " + str(b[1]))
             window.Refresh()
         except Exception:
             sg.PopupError("""Somente números são aceitos e não esqueça de
