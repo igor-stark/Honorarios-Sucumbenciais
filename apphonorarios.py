@@ -11,6 +11,7 @@ layout = [
     [sg.Button("Ok")],
     [sg.Button("Limpar")],
     [sg.Button("Fechar")],
+    [sg.Button("Enter", visible=False, bind_return_key=True)]
 ]
 
 window = sg.Window("Fixação de Honorários", layout)
@@ -21,7 +22,7 @@ while True:
         break
     if event == "Limpar":
         window["_OUT_"].update("")
-    if event in (sg.Ok, "Ok"):
+    if event in (sg.Ok, "Ok", "Enter"):
         try:
             artigo = art.Artigo85()
             a = artigo.honorarios_min(float(value[0]), float(value[1]))
