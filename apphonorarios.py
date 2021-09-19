@@ -1,5 +1,5 @@
 import PySimpleGUIQt as sg
-import Artigo85 as art
+import artigo85 as art
 
 sg.theme("dark grey 5")
 layout = [
