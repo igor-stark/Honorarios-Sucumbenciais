@@ -31,7 +31,7 @@ while True:
             print(b[0] + " " + "{:.2f}".format(b[1]))
             window.Refresh()
         except ValueError:
-            sg.PopupError("Por favor, coloque algum valor.", title="Atenção!")
+            sg.PopupError("Por favor, coloque um número.", title="Atenção!")
         except Exception:
             sg.PopupError(
                 """Somente números são aceitos e não esqueça de
