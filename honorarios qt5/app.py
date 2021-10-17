@@ -17,8 +17,8 @@ class App(Ui_Form):
         try:
             min = artigo.honorarios_min(salario, condenacao)
             max = artigo.honorarios_max(salario, condenacao)
-            self.MinResult.setText("R$:" + str(min))
-            self.MaxResult.setText("R$:" + str(max))
+            self.MinResult.setText("R$:" + '{:.2f}'.format(min))
+            self.MaxResult.setText("R$:" + '{:.2f}'.format(max))
             return
         except ValueError:
             return "Erro"
