@@ -9,6 +9,14 @@ class App(Ui_Form):
         self.CalcButton.clicked.connect(self.clickCalc)
         self.CleanButton.clicked.connect(self.clear)
         self.CloseButton.clicked.connect(self.closeApp)
+        
+        # Lista de QLabels usadas tanto como input quanto output
+        self.label_list = [
+            self.SalarioMin,
+            self.Condenacao,
+            self.MinResult,
+            self.MaxResult,
+        ]
 
     def clickCalc(self):
         salario = self.SalarioMin.text()
@@ -24,11 +32,9 @@ class App(Ui_Form):
             return "Erro"
 
     def clear(self):
-        self.SalarioMin.setText("")
-        self.Condenacao.setText("")
-        self.MinResult.setText("")
-        self.MaxResult.setText("")
-        return print("Tudo limpo!")
+        for label in self.label_list:
+            label.clear()
+        return
 
     def closeApp(self):
         app.quit()
@@ -39,4 +45,4 @@ if __name__ == "__main__":
     MainWindow = QtWidgets.QMainWindow()
     ui = App(MainWindow)
     MainWindow.show()
-    app.exec_()
+    sys.exit(app.exec_())
